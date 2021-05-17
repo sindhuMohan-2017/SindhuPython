@@ -1,0 +1,37 @@
+Numbers
+=======
+* The integer numbers (e.g. 2, 4, 20) have type int, the ones with a fractional part (e.g. 5.0, 1.6) have type float.
+
+operations:
+  + Addition  e.g 2+2 =4
+  - Subtraction
+  * Multipliaction
+  / division(results a flaosting point number) e.g 8 / 5 =1.6
+  // floor divison(discards the fractional part) e.g 8 // 5 =1
+  % modulo(retruns remainder)   e.g 8 % 5 =3
+  ** power
+  
+* The equal sign (=) is used to assign a value to a variable. If a variable is not “defined” (assigned a value), trying to use it will give you an error
+  e.g 
+  a) width = 20
+  b) Trying to read variable which is not defined
+  n  # try to access an undefined variable
+  Traceback (most recent call last):
+    File "<stdin>", line 1, in <module>
+  NameError: name 'n' is not defined
+  
+* There is full support for floating point; operators with mixed type operands convert the integer operand to floating point:
+  e.g  4 * 3.75 - 1  output = 14.0
+  
+ * In interactive mode, the last printed expression is assigned to the variable _. This means that when you are using Python as a desk calculator, 
+ it is somewhat easier to continue calculations, for example:
+  e.g tax = 12.5 / 100
+      price = 100.50
+      price * tax   -->out=12.5625
+      price + _     -->out=113.0625
+      round(_, 2)   -->out=113.06
+This variable should be treated as read-only by the user. Don’t explicitly assign a value to it — you would create an independent local variable with the same name 
+masking the built-in variable with its magic behavior.
+
+* In addition to int and float, Python supports other types of numbers, such as Decimal and Fraction. Python also has built-in support for complex numbers, 
+and uses the j or J suffix to indicate the imaginary part (e.g. 3+5j).
